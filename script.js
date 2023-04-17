@@ -7,8 +7,12 @@ const btnsShowModalWindow = document.querySelectorAll('.show-modal-window');
 console.log(btnsShowModalWindow);
 
 for (let i = 0; i < btnsShowModalWindow.length; i++) {
-    console.log(btnsShowModalWindow[i].textContent);
+    btnsShowModalWindow[i].addEventListener('click', function(){
+        console.log('click');
+        modalWindow.classList.remove('hidden');
+    })
 }
+
 
 
 
